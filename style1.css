@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: black;
+	font-family: 'Roboto Slab', serif;
+}
+.container1{
+	margin-top: 80px;
+	margin-left: 60px;	
+	height: 10vh;
+	position: absolute;
+}
+.SubContainer1 a{
+	color: #fff;
+	margin: 10px;
+	text-decoration: none;
+	padding: 15px;
+	border: 1px solid white;
+	transform: 1s ease;
+}
+ a:hover{
+	color: black;
+	background-color:white;
+	transition: 1.5s ease;
+}
+a:active { 
+    color: black;
+	background-color:white;
+}
+.cont2{
+	color: white;
+	position: relative;
+    width: 20vw;
+	height: 60vh;
+    display: grid;
+	top: 50px;
+	left: 450px;
+	justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 0 40px;
+}
+.cont2 .box{
+    position: relative;
+    height: 400px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont2 .box:before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+	background: linear-gradient( #EF645C, #FFFC31);
+    transform: skew(2deg,2deg);
+    z-index: -1;
+}
+.content{
+    position: relative;
+    padding: 20px;
+	z-index: 10;
+}
+.box .content h1{
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+.box .content p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+}

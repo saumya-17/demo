@@ -1,0 +1,49 @@
+.glowing {
+	position: absolute;
+	top: 200px;
+	left:450px;
+	width: 350px;
+	height: 100px;
+	text-align: center;
+	line-height: 60px;
+	color: #fff;
+	padding-top: 17px;
+	font-size: 38px;
+	text-transform: uppercase;
+	text-decoration: none;
+	box-sizing: border-box;
+	background: linear-gradient(100deg, #5DFDCB, #f441a5,#90D7FF,#03a9f4);
+	background-size: 400%;
+	border-radius: 40px;
+	z-index:1;
+}
+p:hover{
+	animation: effect 7s linear infinite;
+}
+@keyframes effect{
+	0%{
+		background-position: 0%;
+	}
+	100%{
+		background-position: 400%;
+	}
+}
+.glowing:before{
+	content:'';
+	position: absolute;
+	top:-10px;
+	left: -10px;
+	bottom: -10px;
+	right: -10px;
+	z-index:-1;
+	background: linear-gradient(100deg, #03a9f4, #f441a5,#ffeb3b,#03a9f4);
+	background-size: 200%;
+	border-radius: 50px;
+	filter: blur(30px);
+	opacity: 1;
+	transition: 0.60s;
+}
+.glowing:hover:before{
+	opacity: 1;
+	animation: effect 3s linear infinite;
+}
